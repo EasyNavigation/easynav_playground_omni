@@ -43,7 +43,7 @@ Choose a robot with the `robot` launch argument. The available IDs and previews 
 | --- | --- | --- | --- | --- |
 | <img src="./gif/3w.gif" alt="3w robot" width="90"> | <img src="./gif/3w_v2.gif" alt="3w_v2 robot" width="90"> | <img src="./gif/4w.gif" alt="4w robot" width="90"> | <img src="./gif/5w.gif" alt="5w robot" width="90"> | <img src="./gif/6w.gif" alt="6w robot" width="90"> |
 
-All robot models use the same EasyNav linear/angular velocity and acceleration limits, aligned with the Nav2 `FollowPath` limits.
+All robot models share EasyNav limits of 0.6 m/s linear and 0.5 rad/s angular velocity. The simulated wheel command limits are set to ±35 rad/s to support that linear speed; the controller may still slow down for turns, obstacles, and goal approach.
 
 For example, launch a robot with EasyNav in either world:
 
