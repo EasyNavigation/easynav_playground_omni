@@ -7,6 +7,10 @@ SPDX-License-Identifier: Apache-2.0
 
 Gazebo Harmonic simulation of three- to six-wheel omnidirectional robots, integrated with EasyNav. The default launch starts the `3w_v2` robot in `maze2`, together with EasyNav and RViz2.
 
+## Demo
+
+[![Watch the EasyNav Omni Playground demo](https://img.youtube.com/vi/8tPknIoeD1M/hqdefault.jpg)](https://youtu.be/8tPknIoeD1M)
+
 ## Build
 
 From the ROS 2 workspace root:
