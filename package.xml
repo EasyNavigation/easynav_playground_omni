@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<!--
+Copyright (c) 2025 Yohan Prakoso
+Copyright (c) 2026 Francisco Martín Rico
+SPDX-License-Identifier: MIT AND Apache-2.0
+-->
+
+<package format="3">
+  <name>easynav_playground_omni</name>
+  <version>0.1.0</version>
+  <description>Gazebo Harmonic playground for omnidirectional robots with EasyNav.</description>
+  <maintainer email="fmrico@gmail.com">Francisco Martín Rico</maintainer>
+  <license>MIT AND Apache-2.0</license>
+  <author>Yohan Prakoso (original simulator)</author>
+  <author>Francisco Martín Rico (EasyNav integration)</author>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <depend>rclcpp</depend>
+  <depend>std_msgs</depend>
+  <depend>geometry_msgs</depend>
+  <depend>nav_msgs</depend>
+  <depend>sensor_msgs</depend>
+  <depend>tf2</depend>
+  <depend>tf2_ros</depend>
+  <depend>tf2_geometry_msgs</depend>
+  <depend>eigen</depend>
+  <depend>rclpy</depend>
+  <exec_depend>python3</exec_depend>
+  <exec_depend>ament_index_python</exec_depend>
+  <exec_depend>launch</exec_depend>
+  <exec_depend>launch_ros</exec_depend>
+  <exec_depend>controller_manager</exec_depend>
+  <exec_depend>forward_command_controller</exec_depend>
+  <exec_depend>robot_state_publisher</exec_depend>
+  <exec_depend>rviz2</exec_depend>
+  <exec_depend>ros_gz_bridge</exec_depend>
+  <exec_depend>ros_gz_sim</exec_depend>
+  <exec_depend>xacro</exec_depend>
+  <exec_depend>easynav_system</exec_depend>
+  <exec_depend>easynav_regulated_pp_controller</exec_depend>
+  <exec_depend>easynav_costmap_localizer</exec_depend>
+  <exec_depend>easynav_costmap_maps_manager</exec_depend>
+  <exec_depend>easynav_costmap_planner</exec_depend>
+  <exec_depend>easynav_diagnostic_recovery</exec_depend>
+  <exec_depend>easynav_collision_safety_reflex</exec_depend>
+  <exec_depend>easynav_no_path_evaluator</exec_depend>
+  <exec_depend>easynav_obstacle_too_close_evaluator</exec_depend>
+  <exec_depend>easynav_controller_stuck_evaluator</exec_depend>
+  <exec_depend>easynav_ros_graph_evaluator</exec_depend>
+  <exec_depend>easynav_safe_retreat_recovery</exec_depend>
+  <exec_depend>easynav_advance_recovery</exec_depend>
+  <exec_depend>easynav_shutdown_recovery</exec_depend>
+  <exec_depend>easynav_human_assistance_recovery</exec_depend>
+  <exec_depend>easynav_cancel_mission_recovery</exec_depend>
+
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>
