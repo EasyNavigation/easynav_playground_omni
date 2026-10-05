@@ -24,17 +24,17 @@ source install/setup.bash
 ## Launch EasyNav
 
 ```bash
-ros2 launch easynav_playground_omni easynav_navigation_gazebo_sim.launch.py
+ros2 launch easynav_playground_omni easynav_navigation_gazebo_sim.launch.yaml
 ```
 
 The `world` launch argument selects both the Gazebo world and its matching EasyNav map. The available options are `maze1` and `maze2` (default):
 
 ```bash
-ros2 launch easynav_playground_omni easynav_navigation_gazebo_sim.launch.py world:=maze1
+ros2 launch easynav_playground_omni easynav_navigation_gazebo_sim.launch.yaml world:=maze1
 ```
 
 ```bash
-ros2 launch easynav_playground_omni easynav_navigation_gazebo_sim.launch.py world:=maze2
+ros2 launch easynav_playground_omni easynav_navigation_gazebo_sim.launch.yaml world:=maze2
 ```
 
 Other launch arguments, `params_file`, `rviz_config`, and `map_override_file`, can also be overridden.
@@ -52,17 +52,17 @@ All robot models share EasyNav limits of 0.6 m/s linear and 0.5 rad/s angular ve
 For example, launch a robot with EasyNav in either world:
 
 ```bash
-ros2 launch easynav_playground_omni easynav_navigation_gazebo_sim.launch.py robot:=5w world:=maze1
+ros2 launch easynav_playground_omni easynav_navigation_gazebo_sim.launch.yaml robot:=5w world:=maze1
 ```
 
 ```bash
-ros2 launch easynav_playground_omni easynav_navigation_gazebo_sim.launch.py robot:=6w world:=maze2
+ros2 launch easynav_playground_omni easynav_navigation_gazebo_sim.launch.yaml robot:=6w world:=maze2
 ```
 
 To run only Gazebo and the robot, without EasyNav or RViz2:
 
 ```bash
-ros2 launch easynav_playground_omni gazebo_sim.launch.py robot:=4w world:=maze2
+ros2 launch easynav_playground_omni gazebo_sim.launch.yaml robot:=4w world:=maze2
 ```
 
 ## Attribution and licensing
