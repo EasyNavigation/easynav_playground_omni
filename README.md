@@ -11,6 +11,10 @@ Gazebo Harmonic simulation of three- to six-wheel omnidirectional robots, integr
 
 [![Watch the EasyNav Omni Playground demo](https://img.youtube.com/vi/8tPknIoeD1M/hqdefault.jpg)](https://youtu.be/8tPknIoeD1M)
 
+## Supported ROS 2 distributions
+
+This playground needs Gazebo Harmonic or newer, so it runs on Jazzy and later distributions, but not on Humble, whose Gazebo is Fortress. EasyNav itself (core and plugins) does run on Humble: only this simulation does not.
+
 ## Build
 
 From the ROS 2 workspace root:

@@ -37,6 +37,7 @@ SPDX-License-Identifier: MIT AND Apache-2.0
   <exec_depend>easynav_regulated_pp_controller</exec_depend>
   <exec_depend>easynav_system</exec_depend>
   <exec_depend>forward_command_controller</exec_depend>
+  <exec_depend>gz_sim_vendor</exec_depend>
   <exec_depend>joint_state_broadcaster</exec_depend>
   <exec_depend>launch</exec_depend>
   <exec_depend>launch_ros</exec_depend>
